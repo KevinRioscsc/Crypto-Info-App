@@ -1,0 +1,27 @@
+.flex{
+    max-width: 1300px;
+    margin: 0 auto;
+   
+   
+    margin-top: 20px;
+}
+.input {
+    margin: 0 auto;
+    padding: 10px 10px;
+    outline: none;
+    font-size: 16px;
+
+
+}
+.space3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 20px;
+}
+.saerchUp{
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}

@@ -1,0 +1,38 @@
+.card{
+
+    display: inline-block;
+    background: white;
+    height: 200px;
+    width: 300px;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
+
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+
+
+}
+.card:hover{
+    transform: scale(1.05);
+}
+.cardTitle{ 
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    padding: 10px 10px;
+    border-bottom: 1px dotted black;
+}
+.cardInfo{
+    padding: 10px 10px;
+}
+.black{
+    color: black;
+}
+@media screen and (max-width:400px) {
+    .card{
+        width: 200px;
+        height: 220px;
+    }
+    
+}

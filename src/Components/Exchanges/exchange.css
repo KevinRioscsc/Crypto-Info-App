@@ -1,0 +1,120 @@
+.exchange-main{
+    max-width: 1300px;
+    margin: 0 auto;
+    
+}
+.cols-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 20%;
+}
+.exchangeTitle{
+    display: flex;
+    justify-content: space-between;
+}
+.exchanges{
+    width: 20%;
+}
+.markets{
+    width: 20%;
+}
+.priceEx{
+    width: 20%;
+}
+.rec{
+    width: 20%;
+}
+.cols{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dotted black;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    width: 100%;
+}
+.cols:hover{
+    background: rgb(207, 207, 207);
+   
+}
+.data{
+    width: 20%;
+}
+.priceExchange{
+    width: 20%;
+}
+.recommend{
+    width: 15%;
+}
+.table{
+    margin: 50px 10px;
+    padding-left: 20px;
+    background: white;
+}
+@media screen and (max-width: 820px) {
+    .font{
+        font-size: 13px;
+    }
+   .data{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+   }
+   .priceExchange{
+    display: flex;
+    justify-content: center;
+   }
+   .priceEx{
+       display: flex;
+       justify-content: flex-end;
+       gap: 20px;
+   }
+   .markets{
+       display: flex;
+       justify-content: flex-end;
+   }
+   .recommend{
+       display: flex;
+       gap: 20px;
+   }
+   .exchangeTitle{
+       font-size: 13px;
+   }
+   
+}
+.visible{
+    display: none;
+}
+@media screen and (max-width:470px) {
+    .font{
+        font-size: 20px;
+    }
+    .cols{
+        flex-direction: column;
+        justify-content: unset;
+        align-items: flex-start;
+    }
+    .visible{
+        display:unset;
+    }
+    .visible2{
+        display: none;
+    }
+    .recommend{
+        width: 100%;
+        align-items: center;
+    }
+    .priceExchange{
+        width: 100%;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+    .data{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .table{
+        padding: 0;
+    }
+}

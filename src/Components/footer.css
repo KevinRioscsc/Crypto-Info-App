@@ -1,0 +1,23 @@
+.footer{
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+    text-align: center;
+  
+}
+.rights{
+    margin: 0;
+}
+.chain{
+    padding-top: 20px;
+}
+ul{
+    justify-content: center;
+    margin: 0;
+    padding: 10px 0;
+}
+.align{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}

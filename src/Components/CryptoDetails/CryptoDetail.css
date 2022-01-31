@@ -1,0 +1,142 @@
+.CryptoInfo{
+    font-size: 40px;
+    text-align: center;
+    margin-top: 40px;
+}
+.info{
+    text-align: center;
+}
+.main-crypto{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.card-info{
+   color: white;
+    display: flex;
+    justify-content: center;
+}
+.width{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+}
+.card-div{
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    border-bottom: 1px dotted white;
+    transition: all .2s ease-in-out;
+}
+.card-div:hover{
+    background-color: black;
+}
+p{
+    color: white;
+}
+.black{
+    color: black;
+}
+.stats-title2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.smaller{
+    font-size: 20px;
+}
+.stats-section{
+    display: flex;
+    width: 100%;
+   
+    gap: 300px;
+    color: white;
+}
+.cryptoinfo{
+    
+   
+    width: 100%;
+}
+h3{
+    color: white;
+}
+a{
+    color: rgb(53, 162, 235);
+}
+.blue{
+    color: rgb(53, 162, 235);
+}
+.linksdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    
+    max-width: 500px;
+    border-bottom: 1px dotted white;
+}
+.hover:hover{
+    color: aqua;
+}
+.second-main{
+    display: flex;
+    margin: 0 20px;
+    gap: 50px;
+    margin-top: 100px;
+}
+.cryptoLinks{
+    width: 100%;
+}
+.price-container{
+    display: flex;
+   gap: 50px;
+}
+.chart-title{
+    margin-top: 20px;
+    
+}
+.chart{
+    background: white;
+}
+
+@media screen and (max-width: 980px) {
+    .stats-section{
+        flex-direction: column;
+        gap: 10px;
+       
+    }
+    .second-main{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 430px) {
+    .linksdiv{
+        flex-direction: column;
+        border: 1px solid white;
+
+    }
+    .other{
+        text-align: start;
+    }
+   
+    .chart-title h1{
+        font-size: 20px;
+    }
+    .price-container h3{
+        font-size: 15px;
+    }
+    .CryptoInfo{
+        font-size: 25px;
+    }
+    .info{
+        font-size: 15px;
+    }
+    .smaller{
+        font-size: 15px;
+    }
+    .card-div{
+        gap: 10px;
+    }
+}
