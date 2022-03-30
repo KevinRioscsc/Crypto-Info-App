@@ -10,7 +10,7 @@ import { BallTriangle } from 'react-loader-spinner';
 
 
 const Home = () => {
-   // const {data, isFetching} = useGetCryptosQuery()
+   
     const [data, setData] = useState({})
     const [loading, setLoading] = useState(false)
     
@@ -24,7 +24,7 @@ const Home = () => {
             }
         }).then(response => response.json().then(data => {
             
-            console.log(response)
+           
             setData(data?.data?.stats)
             setLoading(true)
            
@@ -51,39 +51,39 @@ const Home = () => {
                 (
                 <div className='space2'>
                  <div className="grid">
-                    <h2 className='title'>Global Crypto Stats</h2>
+                    <h2 className='title black'>Global Crypto Stats</h2>
                         <div className="heading">
-                            <p className='total'>Total Cryptocurrencies</p>
-                            <h2 className='white'>{data.totalCoins}</h2>
+                            <p className='total black'>Total Cryptocurrencies</p>
+                            <h2 className=''>{data.totalCoins}</h2>
                         </div>
-                        <div className="heading2">
-                            <p className='total'>Total Exchanges</p>
-                            <h2  className='white'> {millify(data.totalExchanges)}</h2>
+                        <div className="heading2 ">
+                            <p className='total black'>Total Exchanges</p>
+                            <h2  className='black'> {millify(data.totalExchanges)}</h2>
                         </div>
                         <div className="heading3">
-                            <p className='total'>Total Market Cap</p>
-                            <h2  className='white'>{millify(data.totalMarketCap)}</h2>
+                            <p className='total black'>Total Market Cap</p>
+                            <h2  className='black'>{millify(data.totalMarketCap)}</h2>
                         </div>
                         <div className="heading4">
-                            <p className='total'>Total 24h Volume</p>
-                            <h2  className='white'> {millify(data.total24hVolume)}</h2>
+                            <p className='total black'>Total 24h Volume</p>
+                            <h2  className='black'> {millify(data.total24hVolume)}</h2>
                         </div>
                         <div className="heading5">
-                            <p className='total'>Total Markets</p>
-                            <h2  className='white'>{millify(data.totalMarkets)}</h2>
+                            <p className='total black'>Total Markets</p>
+                            <h2  className='black'>{millify(data.totalMarkets)}</h2>
                         </div>
                         
                         
                 </div>
                 <div className="CryptoTitle">
-                    <h2 className='title2'>Top 10 Crypto</h2>
-                    <Link className='link' to={'/Crypto'}>Show More</Link>
+                    <h2 className='title2 black'>Top 10 Crypto</h2>
+                    <Link className='link black' to={'/Crypto'}>Show More</Link>
                 </div>
                 
                 <CryptoCurrency simplified/>
                 <div className="CryptoTitle">
-                    <h2 className='title2'>Latest News</h2>
-                    <Link className='link'to={'/News'}>Show More</Link>
+                    <h2 className='title2 black'>Latest News</h2>
+                    <Link className='link black'to={'/News'}>Show More</Link>
                 </div>
                 <News simplified/>
             </div>

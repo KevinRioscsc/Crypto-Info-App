@@ -9,11 +9,11 @@ const Footer = () => {
        <div className="footer">
             <Link  to={'/'}>
               <div className="logo align">
-                  <img src={logo} alt="logo" height={50} />
-                  <h2 className='Title black'>Chain</h2>
+                 
+                  <h2 className='Title white'>BlockChain</h2>
               </div>
             </Link>
-           <h3 className='rights black'>All Rights Reserved</h3>
+           <p className='rights white'>BlockChain © 2022 All rights reserved.</p>
            <ul>
                <li>
                     <Link className='border' to={'/Crypto'}>Crypto</Link>

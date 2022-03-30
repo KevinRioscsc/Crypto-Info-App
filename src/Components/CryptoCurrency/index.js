@@ -39,7 +39,7 @@ const CryptoCurrency = ({simplified}) => {
       return <Card uid = {item.uuid} index = {index} name = {item.name} img = {item.iconUrl} price={millify(item.price)} market={millify(item.marketCap)} daily={millify(item.change)} color={item.color} />
     })
   return (
-    <div className="">
+    <div className="som">
       { loading
       ?
       <div>

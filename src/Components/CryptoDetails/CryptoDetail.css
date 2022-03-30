@@ -11,7 +11,7 @@
     margin: 0 auto;
 }
 .card-info{
-   color: white;
+   color: black;
     display: flex;
     justify-content: center;
 }
@@ -27,15 +27,13 @@
     align-items: center;
     gap: 50px;
     justify-content: space-between;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted black;
     transition: all .2s ease-in-out;
 }
 .card-div:hover{
     background-color: black;
 }
-p{
-    color: white;
-}
+
 .black{
     color: black;
 }
@@ -59,9 +57,7 @@ p{
    
     width: 100%;
 }
-h3{
-    color: white;
-}
+
 a{
     color: rgb(53, 162, 235);
 }
@@ -73,12 +69,11 @@ a{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    
     max-width: 500px;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted black;
 }
 .hover:hover{
-    color: aqua;
+    color: rgb(38, 15, 247);
 }
 .second-main{
     display: flex;

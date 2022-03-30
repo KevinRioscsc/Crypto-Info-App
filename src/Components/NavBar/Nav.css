@@ -1,6 +1,6 @@
 li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 20px;
     
     
@@ -59,7 +59,7 @@ nav{
 }
 .nav{
     width: 100%;
-    background-color: white;
+    background-color: #061161;
    
    
 

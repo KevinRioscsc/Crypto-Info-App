@@ -13,6 +13,9 @@
 
 
 }
+.som{
+    min-height: 100vh;
+}
 .space3{
     display: flex;
     justify-content: center;

@@ -16,8 +16,8 @@ const NavBar = ({isOpen}) => {
           <div className="space">
             <Link  to={'/'}>
               <div className="logo">
-                  <img src={logo} alt="logo" height={50} />
-                  <h1 className='Title black'>Chain</h1>
+                  
+                  <h1 className='Title white'>BlockChain</h1>
               </div>
             </Link>
             <ul className='burger'>

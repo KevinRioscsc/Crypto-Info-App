@@ -47,11 +47,11 @@ const data = {
   return (
     <div>
        <div className="chart-title">
-         <h1 className='white'>{coinName} Price Chart</h1>
+         <h1 className='black'>{coinName} Price Chart</h1>
        </div>
        <div className="price-container">
-          <h3>{coinHistory?.data?.change}%</h3>
-          <h3>Current {coinName} Price: $ {currentPrice}</h3>
+          <h3 className='black'>{coinHistory?.data?.change}%</h3>
+          <h3 className='black'>Current {coinName} Price: $ {currentPrice}</h3>
        </div>
        <div className="chart">
         <Line data={data} options={options}/>

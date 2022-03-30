@@ -6,6 +6,7 @@ import HTMLReactParser from 'html-react-parser';
 import { AiOutlineMoneyCollect, AiOutlineDollarCircle, AiOutlineFundProjectionScreen,AiOutlineExclamationCircle, AiOutlineNumber,AiOutlineFund, AiOutlineTrophy, AiOutlineCheckCircle,AiTwotoneWarning } from 'react-icons/ai';
 import LineChart from '../LineChart';
 import { useGetCryptoHistoryQuery } from '../../services/cryptoApi';
+import { BallTriangle } from 'react-loader-spinner';
 
 
 const CryptoDetails = () => {
@@ -50,8 +51,8 @@ const CryptoDetails = () => {
       {loading
       ?
       <div className='main-crypto'>
-        <h1 className='CryptoInfo white'>{data.name} ({data.symbol}) Price</h1>
-        <p className='info white'>{data.name} live price in US dollars. View value statistics, market cap, and supply</p>
+        <h1 className='CryptoInfo black'>{data.name} ({data.symbol}) Price</h1>
+        <p className='info black'>{data.name} live price in US dollars. View value statistics, market cap, and supply</p>
         <div className="margin">
         <select defaultValue='7d' name="" id="" className='time-period' placeholder='Select Time Period' onChange={(value) =>setTimePeriod(value.target.value) }>
         {time.map((item, index) => {
@@ -63,29 +64,29 @@ const CryptoDetails = () => {
         
         <div className="stats">
             <div className="stats-title">
-                <h1 className='CryptoInfo white other' >{data.name} Value Stats</h1>
-                <p className='info white other'>An overview showing the stats of {data.name}</p>
+                <h1 className='CryptoInfo black other' >{data.name} Value Stats</h1>
+                <p className='info black other'>An overview showing the stats of {data.name}</p>
             </div>
             <div className="card-info">
                 <div className="width">
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineDollarCircle/>
-                            <p>Price to USD</p>
+                            <p className='black'> Price to USD</p>
                         </div>
                         <h1 className='smaller'>$ {millify(data.price)}</h1>
                     </div>
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineNumber/>
-                            <p>Rank</p>
+                            <p className='black'>Rank</p>
                         </div>
                         <h1 className='smaller'>{data.rank}</h1>
                     </div>
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineDollarCircle/>
-                            <p>Listed At</p>
+                            <p className='black'>Listed At</p>
                         </div>
                         <h1 className='smaller'>$ {millify(data.listedAt)}</h1>
                     </div>
@@ -93,14 +94,14 @@ const CryptoDetails = () => {
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineDollarCircle/>
-                            <p>Market Cap</p>
+                            <p className='black'>Market Cap</p>
                         </div >
                         <h1 className='smaller'>$ {millify(data.marketCap)}</h1>
                     </div>
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineTrophy/>
-                            <p>All-time-high(daily avg.)</p>
+                            <p className='black'>All-time-high(daily avg.)</p>
                         </div>
                         <h1 className='smaller'> $ {millify(data.allTimeHigh.price)}</h1>
                     </div>
@@ -109,29 +110,29 @@ const CryptoDetails = () => {
         </div>
         <div className="stats">
             <div className="stats-title">
-                <h1 className='CryptoInfo white other'>Other Statistics</h1>
-                <p className='info other'>An overview showing the stats of all cryptocurrencies</p>
+                <h1 className='CryptoInfo black other'>Other Statistics</h1>
+                <p className='info other black'>An overview showing the stats of all cryptocurrencies</p>
             </div>
             <div className="card-info">
                 <div className="width">
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineFundProjectionScreen/>
-                            <p>Number Of Markets</p>
+                            <p className='black'>Number Of Markets</p>
                         </div>
                         <h1 className='smaller'>{millify(data.numberOfMarkets)}</h1>
                     </div>
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineFund/>
-                            <p>Number of Exchanges</p>
+                            <p className='black'>Number of Exchanges</p>
                         </div>
                         <h1 className='smaller'>{millify(data.numberOfExchanges)}</h1>
                     </div>
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineExclamationCircle/>
-                            <p>Approved Supply</p>
+                            <p className='black'>Approved Supply</p>
                         </div>
                         <h1 className='smaller'>{data.supply.confirmed ? <AiOutlineCheckCircle/> : <AiTwotoneWarning/> }</h1>
                     </div>
@@ -139,14 +140,14 @@ const CryptoDetails = () => {
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineExclamationCircle/>
-                            <p>Total Supply</p>
+                            <p className='black'>Total Supply</p>
                         </div >
                         <h1 className='smaller'>$ {millify(data.supply.total)}</h1>
                     </div>
                     <div className="card-div">
                         <div className="stats-title2">
                             <AiOutlineExclamationCircle/>
-                            <p>Circulating Supply</p>
+                            <p className='black'>Circulating Supply</p>
                         </div>
                         <h1 className='smaller'> $ {millify(data.supply.circulating)}</h1>
                     </div>
@@ -158,7 +159,9 @@ const CryptoDetails = () => {
         <div className="second-main">
         <div className="cryptoinfo">
             <h1 className='blue'>What is {data.name}?</h1>
-            {HTMLReactParser(data.description)}
+            <div className='black'>
+                {HTMLReactParser(data.description)}
+            </div>
         </div>
         <div className="cryptoLinks">
             <div className="link-title">
@@ -167,8 +170,8 @@ const CryptoDetails = () => {
             <div className="linksCard">
             {data.links.map((item, index) => {
                  return <div className="linksdiv" key={item.name}>
-                     <h3 className='white'>{item.type}</h3>
-                     <a className='hover white' href={item.url} target='_blank'>{item.name}</a>
+                     <h3 className='black'>{item.type}</h3>
+                     <a className='hover black' href={item.url} target='_blank'>{item.name}</a>
                  </div>
             })}
                
@@ -177,7 +180,9 @@ const CryptoDetails = () => {
         </div>
       </div>
       :
-      <h1>loading...</h1>
+      <div className="ball">
+          <BallTriangle  color='rgb(53, 162, 235)' height= '80' width='80' ariaLabel='loading'/>
+        </div>
 
     }
     

@@ -4,10 +4,7 @@
     background: white;
     height: 200px;
     width: 300px;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
-
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     cursor: pointer;
     transition: all .2s ease-in-out;
 
