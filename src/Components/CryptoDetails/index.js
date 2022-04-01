@@ -29,7 +29,6 @@ const CryptoDetails = () => {
             }
         })
         .then(response => response.json().then(res => {
-            console.log(res.data.coin)
             setData(res.data.coin)
             setLoading(true)
         }))

@@ -24,7 +24,6 @@ const News = ({simplified}) => {
       })
       .then(response => {
         response.json().then(res => {
-          console.log(res.value)
           setDataNews(res.value)
           setLoading(true)
         });
