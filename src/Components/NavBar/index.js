@@ -16,7 +16,7 @@ const NavBar = ({isOpen}) => {
           <div className="space">
             <Link  to={'/'}>
               <div className="logo">
-                  <img src={logo} height = {25} alt="" />
+                  <img src={logo} height = {55} alt="" />
                  
               </div>
             </Link>
