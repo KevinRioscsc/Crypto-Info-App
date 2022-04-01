@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import logo from '../Images/logo-64.png'
+import logo from '../Images/Quest.png'
 import { AiFillHome, AiOutlineBulb, AiOutlineRobot, AiOutlineApartment } from "react-icons/ai";
 import { GiHamburgerMenu } from 'react-icons/gi';
 import {FaBars} from 'react-icons/fa';
@@ -16,8 +16,8 @@ const NavBar = ({isOpen}) => {
           <div className="space">
             <Link  to={'/'}>
               <div className="logo">
-                  
-                  <h1 className='Title white'>BlockChain</h1>
+                  <img src={logo} height = {25} alt="" />
+                 
               </div>
             </Link>
             <ul className='burger'>
